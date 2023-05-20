@@ -1,18 +1,18 @@
-import Adafruit_DHT
+#import Adafruit_DHT
 import datetime
 import subprocess
 import telegram_send
 from time import sleep
 import os
-from plotear_datos import crear_grafica
+#from plotear_datos import crear_grafica
 
 ############################################################
 #OBTENER LOS DATOS DEL SENSOR
 ############################################################
-DHT_SENSOR = Adafruit_DHT.DHT11
-DHT_PIN = 23
-humidity, temperature = Adafruit_DHT.read_retry(DHT_SENSOR, DHT_PIN)
-
+#DHT_SENSOR = Adafruit_DHT.DHT11
+#DHT_PIN = 23
+#humidity, temperature = Adafruit_DHT.read_retry(DHT_SENSOR, DHT_PIN)
+humidity, temperature = 80, 20
 ############################################################
 #OBTENER FECHAS Y NOMBRES DE ARCHIVOS
 ############################################################
